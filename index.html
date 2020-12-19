@@ -1,0 +1,68 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0.0" />
+<link href="style.css" rel="stylesheet"></link>
+<link href="w3.css" rel="stylesheet"></link>
+<script src="script.js" type="text/javascript"></script>
+<body>
+<div class="hanging">
+<div class="hangrod"></div>
+<div class="hangbox">
+<center><div class="hangrings"></div>
+</center>
+<div class="hangtext">PASSWORD STRENGTH CALCULATOR
+<div class="hangshadow"></div>
+</div></div></div>
+
+<center>
+<div class="content">
+<div class="w3-card-12">
+<div class="w3-card-2 inputbox">
+<input class="w3-input" type="text" id="text" maxlength="18" placeholder="Enter password here..." />
+<br/>
+<input class="w3-btn btn w3-red" type="button" value="Check Now" onclick="strengthcheck()" />
+</div>
+
+<div class="w3-card-2 countbox">
+<div class="countheader">USAGE COUNTER</div>
+<div class="passdata">
+<div class="passbox">Password Count  <font id="lengthlen"> 0 </font></div>
+<div class="passbox">Numbers Count <font id="numlen"> 0 </font></div>
+<div class="passbox">Small letters Count <font id="smalllen"> 0 </font></div>
+<div class="passbox">Capital letters Count <font id="symblen"> 0 </font></div>
+<div class="passbox">Symbols Count  <font id="lengthlen"> 0 </font></div>
+</div>
+</div>
+
+<div class="w3-card-2 chartbox">
+<div class="chartheader">STRENGTH LEVELS</div>
+<center>
+<div class="bargraph">
+<div class="barchart">
+<div class="bars">
+<div class="bar" id="lengthbar"></div>
+<div class="bar" id="numbar"></div>
+<div class="bar" id="smallbar"></div>
+<div class="bar" id="bigbar"></div>
+<div class="bar" id="symbbar"></div>
+</div>
+<div class="barnames">
+<div class="barname">Length</div>
+<div class="barname">Numbers</div>
+<div class="barname">Smalls</div>
+<div class="barname">Bigs</div>
+<div class="barname">Symbols</div>
+</div>
+</div>
+</div>
+</center>
+</div>
+<div class="w3-card-2 hackbox">
+<div class="hackheader">PASSWORD HACKBILITY</div>
+<img src="hacker.jpg" class="hackerimg" />
+<div class="hack">
+<div class="hackcheck" id="hackreport">Password hackble or not.</div>
+</div>
+</div>
+
+</div></div>
+</center>
+</body>
